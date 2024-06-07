@@ -1,0 +1,92 @@
+.header {
+    padding-top: 130px;
+
+    &-content {
+        @include flex(center, center);
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &-title {
+        font-family: $font-family;
+        font-weight: 800;
+        @include adaptive-value('font-size', 55, 35);
+        line-height: 115%;
+        text-align: center;
+        color: $primary-color;
+        width: 550px;
+
+        @media screen and (max-width: 741px){
+            width: 100%;
+        }
+    }
+
+    &-title_linner {
+        background: linear-gradient(90deg, #ff8660 0%, #9a33ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &-subtitle{
+        font-family: $font-family;
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: $secondary-text;
+        width: 679px;
+        margin: 0 auto;
+
+        @media screen and (max-width: 741px){
+            width: 100%;
+        }
+    }
+
+    &-buttons{
+        @include flex(center, unset);
+        gap: 15px;
+        @media screen and (max-width: 444px){
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+
+    &-button{
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 21px;
+        color: $background-color;
+        border: 1px solid $primary-color;
+        border-radius: 50px;
+        width: 195px;
+        height: 64px;
+        background: $primary-color;
+        @media screen and (max-width: 444px){
+            width: 100%;
+        }
+    }
+
+    &-btn{
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 21px;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        border-radius: 50px;
+        width: 195px;
+        height: 64px;
+        background: transparent;
+        transition: all 0.2s ease-in-out;
+        @media screen and (max-width: 444px){
+            width: 100%;
+        }
+
+        &:hover{
+            background-color: $primary-color;
+            color: $background-color
+        }
+
+    }
+}

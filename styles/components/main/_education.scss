@@ -1,0 +1,33 @@
+.education{
+
+    padding-top: 100px;
+
+    &-title{
+        font-family: $font-family;
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 102%;
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #5badff 0%, #1373d1 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
+    &-name{
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 21px;
+        color: $primary-color;
+    }
+
+    &-subtitle{
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: $secondary-color;
+        padding-top: 20px;
+    }
+}
